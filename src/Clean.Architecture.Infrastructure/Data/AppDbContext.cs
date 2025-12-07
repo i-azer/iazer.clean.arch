@@ -1,4 +1,5 @@
-﻿using Clean.Architecture.Core.ContributorAggregate;
+﻿using Clean.Architecture.Core.ContactQrCodeAggregate;
+using Clean.Architecture.Core.ContributorAggregate;
 using Clean.Architecture.Core.MemberAggregate;
 
 namespace Clean.Architecture.Infrastructure.Data;
@@ -9,6 +10,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options,
 
   public DbSet<Contributor> Contributors => Set<Contributor>();
   public DbSet<Member> Members => Set<Member>();
+  public DbSet<ContactQrCode> ContactQrCodes => Set<ContactQrCode>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

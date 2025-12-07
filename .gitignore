@@ -265,3 +265,4 @@ Packages.props
 #Local Log Files
 log*.txt
 /sample/src/NimblePros.SampleToDo.Web/appsettings.Development.json
+/src/Clean.Architecture.Web/.config/dotnet-tools.json
